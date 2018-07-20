@@ -12,10 +12,6 @@ const postingContainer = document.getElementById('publications'); // contenedor 
 function postingMessages(message){ // función generadora de DOM de publicación usuario
     const postingUser = document.createElement('div'); // creo un elemento div
     const paragraph = document.createElement('p'); // creo un elemento parrafo
-   
-    
-
-   
     //const imagen = document.createElement('img');  //creo un elemento imagen
     const textPost = document.createTextNode(message); // creo el texto de la publicacion obtenido del mensaje escrito del usuario
     const user = document.createElement('a')
@@ -28,7 +24,6 @@ function postingMessages(message){ // función generadora de DOM de publicación
     const iconHeart = document.createTextNode('favorite') // le digo que es un texto para decirle que icono es
     const editButton = document.createElement('i');
     const iconEdit = document.createTextNode('border_color');
-   
     
     const commentButton = document.createElement('i');
     const iconComment = document.createTextNode('insert_comment')
@@ -63,7 +58,6 @@ function postingMessages(message){ // función generadora de DOM de publicación
     postingUser.appendChild(user);
     postingUser.appendChild(userNameText);
     postingUser.appendChild(paragraph);
-   // paragraph.replaceWith(textoeditado);
     postingUser.appendChild(counter);
     postingUser.appendChild(likeHeart);
     postingUser.appendChild(commentButton);
@@ -72,18 +66,14 @@ function postingMessages(message){ // función generadora de DOM de publicación
     postingUser.appendChild(deleteButton);
     postingContainer.appendChild(postingUser);
    
-   
-   
+    editPost();
+    function editPost(){
+        
+        document.getElementById('seccion1').contentEditable = 'true';
+        document.getElementById('seccion1').designMode='on';
+    
+    }
   
-
-    var parent = document.createElement("div");
-var child = document.createElement("p");
-parent.appendChild(child);
-var span = document.createElement("span");
-
-
-
-
     
     countLikesChangeColor();
 
@@ -133,10 +123,6 @@ function deletePost(event) {
         deletePostLocalStorage(event.target.parentElement.innerText); 
     }
 };
-
-
-
-
 
 
 /* //funcion para cargar imagen
