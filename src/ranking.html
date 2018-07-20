@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../src/css/styleP.css">
+        <link rel="shortcut icon" href="img/isotipo.png">
+        <link rel="stylesheet" href="../src/css/style.css">
+        <title>Veggie Experience</title>
+        
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <img class = 'brand-logo center responsive-img' src="img/logotipoHorizontalBordeBlanco (1).png" id="isotipo"class ="brand-logo center">
+                    <ul id="slide-out" class="sidenav">
+                            <li><a href="../src/indexMuro.html" class="btn-flat black-text inicio"><i class="material-icons">home</i>Inicio</a></li>
+                            <li><a href="../src/indexp.html" class="btn-flat black-text"><i class="material-icons">person</i>Perfil</a></li>
+                            <li><a href="../src/index.html" class="btn-flat black-text" onclick="cerrarSesion()"><i class="material-icons">keyboard_tab</i>Cerrar Sesión</a></li>
+                            <li><div class="divider grey"></div></li>
+                            <li><a href="#!" class="sidenav-close" ><i class="material-icons">keyboard_backspace</i>Volver</a></li>
+                    </ul>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+            </div>
+        </nav> 
+
+        <section>
+                <div class="row">
+                        <div class="col s12 m7">
+                          <div class="card">
+                            <div class="card-image">
+                              <img>
+                              <span class="card-title"></span>
+                            </div>
+                            <div class=" card-content">
+                                 <h6>Ranking de Restorantes Vegano o Vegetariano</h6>
+                            </div>
+                            <div class="card-action">
+                            
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+
+        </section>
+        
+        <div class="row">
+                <div class="col s12 m7">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="../src/img/resto">
+                      <span class="card-title">El Vegano</span>
+                    </div>
+                    <div class="card-content">
+                      Delicioso restorant ubicado en barrio República.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">This is a link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                    <div class="col s12 m7">
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="../src/img/facade.jpg">
+                          <span class="card-title">El Raj</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Comida de la India, apta para vegetarianos y veganos.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">http://theraj.cl/</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                        <div class="col s12 m7">
+                          <div class="card">
+                            <div class="card-image">
+                              <img src="../src/img/Z33__Fl-8832-Bunker-Ff.jpg">
+                              <span class="card-title">Vegan Bunker</span>
+                            </div>
+                            <div class="card-content">
+                              <p> Comida muy sabrosa, vale la pena el menú del día. Los sándwiches no son su fuerte pero los pasteles y tortas definitivamente si lo son!
+                                    Destaca su decoración y buena disposición de la gente que atiende.</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">https://veganbunker.cl/</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                            <div class="col s12 m7">
+                              <div class="card">
+                                <div class="card-image">
+                                  <img src="../src/img/soju.jpg">
+                                  <span class="card-title">Soju</span>
+                                </div>
+                                <div class="card-content">
+                                  <p>Recuerden que si desean probar la parrillada vegana deben de avisar con anticipación llamando al numero (02) 2689 5764 o mandando un mensaje a Soju o a Soju 2</p>
+                                </div>
+                                <div class="card-action">
+                                  <a href="#">http://restaurantsoju.blogspot.com</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                                <div class="col s12 m7">
+                                  <div class="card">
+                                    <div class="card-image">
+                                      <img src="../src/img/tommy.jpg">
+                                      <span class="card-title">Tommy Beans</span>
+                                    </div>
+                                    <div class="card-content">
+                                      <p>La opción Veggie la encuentras solo en Tommy Beans. ... Tardes Chidas Tommy Beans es válida en todos los locales Tommy Beans a partir de las 16:00 hrs.
+                                            .</p>
+                                    </div>
+                                    <div class="card-action">
+                                      <a href="#">https://www.tommybeans.cl/</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                      
+                        
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBd5aPn_63VSjw-JftcStTGTiEkgW_TGbI",
+        authDomain: "proyecto3redsocial.firebaseapp.com",
+        databaseURL: "https://proyecto3redsocial.firebaseio.com",
+        projectId: "proyecto3redsocial",
+        storageBucket: "proyecto3redsocial.appspot.com",
+        messagingSenderId: "36811154021"
+      };
+      firebase.initializeApp(config);
+    </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        <script src="../src/js/perfil.js"></script>
+        <script src="../src/js/mainIniciar.js"></script>
+      
+    </body>
+</html>
